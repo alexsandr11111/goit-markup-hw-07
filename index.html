@@ -20,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -30,6 +31,11 @@
           <a class="link heder-logo" href="./index.html"
             >Web<span class="heder-logo-span">Studio</span></a
           >
+          <button class="mob-open-button" type="button" data-menu-open>
+            <svg width="33" height="22" class="mobail-close-btn-icon">
+              <use href="./images/icons.svg#icon-open-tell-menu"></use>
+            </svg>
+          </button>
           <ul class="list nav-list">
             <li>
               <a class="link nav-last active" href="./index.html">Studio</a>
@@ -41,26 +47,105 @@
               <a class="link nav-last" href="">Contacts</a>
             </li>
           </ul>
+          <div>
+            <address class="address">
+              <ul class="list address-list">
+                <li>
+                  <a
+                    class="link address-mail"
+                    href="mailto:info@devstudio.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li>
+                  <a class="link address-mail" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
         </nav>
-        <address class="address">
-          <ul class="list address-list">
+      </div>
+      <!-- MOB-MENU -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mobail-close-button" data-menu-close>
+          <svg width="8" height="8" class="mobail-close-btn-icon">
+            <use href="./images/icons.svg#icon-close-modal-icon"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="list mob-menu-list">
             <li>
-              <a
-                class="link address-mail"
-                href="mailto:info@devstudio.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                >info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a class="link address-mail" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              <a class="link mob-menu-last active" href="./index.html"
+                >Studio</a
               >
             </li>
+            <li>
+              <a class="link mob-menu-last" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="link mob-menu-last" href="">Contacts</a>
+            </li>
           </ul>
-        </address>
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="list mob-address-list">
+              <li>
+                <a class="link mob-address-tell" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link mob-address-mail"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list mob-menu-list-icon">
+            <li class="mob-menu-last-icon">
+              <a href="" class="last mob-menu-social-icon">
+                <svg width="16" height="16" class="mob-menu-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-last-icon">
+              <a href="" class="last mob-menu-social-icon">
+                <svg width="16" height="16" class="mob-menu-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-last-icon">
+              <a href="" class="last mob-menu-social-icon">
+                <svg width="16" height="16" class="mob-menu-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-last-icon">
+              <a href="" class="last mob-menu-social-icon">
+                <svg width="16" height="16" class="mob-menu-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- /MOB-MENU -->
     </header>
     <!------------------ /HEDER-------------- -->
     <!------------------ MAIN-------------- -->
@@ -80,7 +165,7 @@
       <!--------features-section------->
 
       <section class="features-section">
-        <div class="container">
+        <div class="container contanier-features">
           <h2 class="features-hidden-title" hidden>Our properties</h2>
 
           <ul class="list features-list">
@@ -90,6 +175,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
+
               <h3 class="features-list-title">Strategy</h3>
               <p class="features-list-text">
                 Our goal is to identify the business problem to walk away with
@@ -102,6 +188,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
+
               <h3 class="features-list-title">Punctuality</h3>
               <p class="features-list-text">
                 Bring the key message to the brand's audience for the best price
@@ -114,6 +201,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
+
               <h3 class="features-list-title">Diligence</h3>
               <p class="features-list-text">
                 Research and confirm brands that present the strongest digital
@@ -126,6 +214,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
+
               <h3 class="features-list-title">Technologies</h3>
               <p class="features-list-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -145,6 +234,7 @@
           <ul class="list galerey-section-container">
             <li class="galerey-last">
               <img
+                srcset="./images/index.galerey/galerey/pc-2x.jpg 2x"
                 src="./images/index.galerey/galerey/pc.jpg"
                 alt="Monitor"
                 width="360"
@@ -153,6 +243,7 @@
             </li>
             <li class="galerey-last">
               <img
+                srcset="./images/index.galerey/galerey/telephones-2x.jpg 2x"
                 src="./images/index.galerey/galerey/telephones.jpg"
                 alt="telephones"
                 width="360"
@@ -161,6 +252,7 @@
             </li>
             <li class="galerey-last">
               <img
+                srcset="./images/index.galerey/galerey/notebook-2x.jpg 2x"
                 src="./images/index.galerey/galerey/notebook.jpg"
                 alt="notebook"
                 width="360"
@@ -180,6 +272,7 @@
           <ul class="list description-list">
             <li class="description-img">
               <img
+                srcset="./images/index.galerey/our_team/mark-guerrero-2x.jpg 2x"
                 class="description-card-img"
                 src="./images/index.galerey/our_team/mark-guerrero.jpg"
                 alt="poto Mark Guerrero"
@@ -223,6 +316,7 @@
             </li>
             <li class="description-img">
               <img
+                srcset="./images/index.galerey/our_team/tom-ford-2x.jpg 2x"
                 class="description-card-img"
                 src="./images/index.galerey/our_team/tom-ford.jpg"
                 alt="poto Tom Ford"
@@ -266,6 +360,7 @@
             </li>
             <li class="description-img">
               <img
+                srcset="./images/index.galerey/our_team/camila-garcia-2x.jpg 2x"
                 class="description-card-img"
                 src="./images/index.galerey/our_team/camila-garcia.jpg"
                 alt="poto Camila Garcia"
@@ -309,6 +404,7 @@
             </li>
             <li class="description-img">
               <img
+                srcset="./images/index.galerey/our_team/daniel-wilson-2x.jpg 2x"
                 class="description-card-img"
                 src="./images/index.galerey/our_team/daniel-wilson.jpg"
                 alt="poto Daniel Wilson"
@@ -573,5 +669,6 @@
     </div>
     <!-- -------- /modal window ------ -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
