@@ -259,6 +259,8 @@ text-align: inherit;
   padding: 24px 0;
 }
 .address-mail {
+  font-size: 16px;
+line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -304,6 +306,9 @@ text-align: inherit;
 }
 .features-list{
   flex-wrap: nowrap;
+}
+.features-list-text {
+  font-weight: 400;
 }
 /* /FEATURES */
 /* DESCRIPTION */
